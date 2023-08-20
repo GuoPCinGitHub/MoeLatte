@@ -1,0 +1,89 @@
+:root {
+	--theme-accent-color--rgb: 26, 162, 170 !important;
+	--theme-secondary-color--rgb: 32, 159, 181 !important;
+	--theme-text-color--rgb: 76, 79, 105 !important;
+	--theme-link-color: rgb(3, 105, 146) !important;
+	--theme-accent-link-color: rgb(230, 233, 239) !important;
+	--theme-background-color: rgb(251, 252, 253) !important;
+	--theme-border-color: rgb(220, 224, 232) !important;
+	--theme-text-shadow-color: rgb(140, 143, 161) !important;
+	--theme-button-color: rgb(32, 159, 181) !important;
+	--theme-button-color--hover: #209FB5 !important;
+	--theme-button-color--active: #04A5E5 !important;
+	--theme-card-background-color--rgb: 255, 252, 246 !important;
+	--theme-card-box-shadow: 0 0 0.5rem rgba(140, 143, 161, 0.1) !important;
+	--theme-card-box-shadow--hover: 0 0 0.85rem rgba(140, 143, 161, 0.2) !important;
+	--theme-header-background-color: rgb(230, 233, 239) !important;
+	--theme-header-box-shadow-color: rgb(220, 224, 232) !important;
+	--theme-footer-top-color: rgb(220, 224, 232) !important;
+	--theme-footer-bottom-color: #CCD0DA !important;
+	--theme-danger-color: rgb(230, 69, 83) !important;
+	--theme-input-background-color: rgb(247, 248, 250) !important;
+	--theme-input-border-color: rgb(220, 224, 232) !important;
+	--theme-input-border-color--hover: #CCD0DA !important;
+	--home-success-color: rgb(32, 159, 181) !important;
+	--theme-just-kidding-text-color: hsl(232, 10%, 53%);
+	--theme-accent-color: rgb(var(--theme-accent-color--rgb)) !important;
+	--theme-secondary-color: rgb(var(--theme-secondary-color--rgb)) !important;
+	--theme-text-color: rgb(var(--theme-text-color--rgb)) !important;
+	--theme-card-background-color: rgb(var(--theme-card-background-color--rgb)) !important;
+}
+
+/* Tabs */
+body.skin-moeskin .n-tabs {
+	--n-bar-color: var(--theme-button-color) !important;
+	--n-tab-text-color-active: var(--theme-button-color--active) !important;
+	--n-tab-text-color-hover: var(--theme-button-color--hover) !important;
+}
+
+/* Button  */
+body.skin-moeskin .n-button--default-type:not(.n-button--color) {
+	--n-text-color: var(--theme-text-color) !important;
+	--n-text-color-hover: var(--theme-button-color--hover) !important;
+	--n-text-color-pressed: var(--theme-button-color--active) !important;
+	--n-text-color-focus: var(--theme-button-color--active) !important;
+	--n-text-color-disabled: var(--theme-just-kidding-text-color) !important;
+	--n-border-hover: 1px solid var(--theme-button-color--hover) !important;
+	--n-border-pressed: 1px solid var(--theme-button-color--active) !important;
+	--n-border-focus: 1px solid var(--theme-button-color--active) !important;
+	--n-border-disabled: 1px solid var(--theme-just-kidding-text-color) !important;
+}
+body.skin-moeskin .n-button--primary-type {
+	--n-color: var(--theme-button-color) !important;
+	--n-color-hover: var(--theme-button-color--hover) !important;
+	--n-color-pressed: var(--theme-button-color--active) !important;
+	--n-color-focus: var(--theme-button-color--active) !important;
+	--n-color-disabled: var(--theme-just-kidding-text-color) !important;
+	--n-ripple-color: var(--theme-button-color) !important;
+	--n-text-color: var(--theme-accent-link-color) !important;
+	--n-text-color-hover: var(--theme-accent-link-color) !important;
+	--n-text-color-pressed: var(--theme-accent-link-color) !important;
+	--n-text-color-focus: var(--theme-accent-link-color) !important;
+	--n-text-color-disabled: var(--theme-accent-link-color) !important;
+	--n-border: 1px solid var(--theme-button-color) !important;
+	--n-border-hover: 1px solid var(--theme-button-color--hover) !important;
+	--n-border-pressed: 1px solid var(--theme-button-color--active) !important;
+	--n-border-focus: 1px solid var(--theme-button-color--active) !important;
+	--n-border-disabled: 1px solid var(--theme-just-kidding-text-color) !important;
+}
+
+body.skin-moeskin .n-badge {
+	--n-color: var(--theme-danger-color) !important;
+	--n-ripple-color: var(--theme-danger-color) !important;
+}
+
+body.skin-moeskin .mobile-edit-button a:visited {
+	color: var(--n-text-color-pressed);
+}
+
+body.skin-moeskin img[src="https://app.moegirl.org.cn/img/MoeSkin_feedback_icon_green.png"] {
+	filter: hue-rotate(79deg) brightness(.76);
+}
+
+body.skin-moeskin.page-Mainpage .header-icon {
+	filter: hue-rotate(67deg) brightness(.82);
+}
+
+body.skin-moeskin.page-Mainpage .home-topics::after, .home-card::after {
+	filter: hue-rotate(74deg);
+}
