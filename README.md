@@ -1,5 +1,5 @@
 <h3 align="center">
-  <img src="https://s2.loli.net/2023/05/16/29TQjsVK7i83AWP.png" alt="MoeLatte" style="width: 580px; max-width: 100%;"/>
+  <img src="MoeLatte-zh-cn.png" alt="MoeLatte" style="width: 580px; max-width: 100%;"/>
 </h3>
 
 &nbsp;
@@ -15,5 +15,5 @@
 &nbsp;
 
 <p align="center">
-  <img src="https://s2.loli.net/2023/08/20/cOv12Y9mpwfeEib.png" alt="MoeLatte" style="width: 200px; max-width: 100%;"/>
+  <img src="MoeLatteColorBlocks.png" alt="MoeLatte" style="width: 200px; max-width: 100%;"/>
 </p>
