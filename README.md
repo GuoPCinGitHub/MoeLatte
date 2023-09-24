@@ -17,3 +17,19 @@
 <p align="center">
   <img src="MoeLatteColorBlocks.png" alt="MoeLatte" style="width: 200px; max-width: 100%;"/>
 </p>
+
+&nbsp;
+
+<p align="center">
+  MoeLatte is a theme for MoeSkin based on Latte flavor in <a href="https://catppuccin.com/">Catppuccin Theme</a>.
+</p>
+
+<p align="center">
+  With colors from green to blue in Latte, the theme made some adjustments for convenience of use. 
+</p>
+
+&nbsp;
+
+<p align="center">
+  <img src="MoeLatteColorBlocks.png" alt="MoeLatte" style="width: 200px; max-width: 100%;"/>
+</p>
