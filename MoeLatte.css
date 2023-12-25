@@ -8,25 +8,49 @@
 	--theme-border-color: rgb(220, 224, 232) !important;
 	--theme-text-shadow-color: rgb(140, 143, 161) !important;
 	--theme-button-color: rgb(32, 159, 181) !important;
-	--theme-button-color--hover: #209FB5 !important;
-	--theme-button-color--active: #04A5E5 !important;
+	--theme-button-color--hover: #25B6D0 !important;
+	--theme-button-color--active: #1C889B !important;
 	--theme-card-background-color--rgb: 255, 252, 246 !important;
 	--theme-card-box-shadow: 0 0 0.5rem rgba(140, 143, 161, 0.1) !important;
 	--theme-card-box-shadow--hover: 0 0 0.85rem rgba(140, 143, 161, 0.2) !important;
+	--theme-card-border-color: rgb(220, 224, 232) !important;
 	--theme-header-background-color: rgb(230, 233, 239) !important;
 	--theme-header-box-shadow-color: rgb(220, 224, 232) !important;
 	--theme-footer-top-color: rgb(220, 224, 232) !important;
 	--theme-footer-bottom-color: #CCD0DA !important;
+	--theme-toolbar-background-color: rgb(237, 246, 248) !important;
+	--theme-success-color: rgb(28, 147, 191) !important;
+	--theme-info-color: rgb(114, 135, 253) !important;
+	--theme-warn-color: rgb(243, 149, 18) !important;
 	--theme-danger-color: rgb(230, 69, 83) !important;
+	--theme-empty-color: rgb(188, 192, 204) !important;
 	--theme-input-background-color: rgb(247, 248, 250) !important;
 	--theme-input-border-color: rgb(220, 224, 232) !important;
 	--theme-input-border-color--hover: #CCD0DA !important;
-	--home-success-color: rgb(32, 159, 181) !important;
+	--theme-list-item-background-color: rgb(230, 233, 239) !important;
+	--theme-list-item-background-color--hover: rgba(41, 155, 194, .16) !important;
+	--home-accent-color--rgb: 26, 162, 170 !important;
+	--home-secondary-color--rgb: 32, 159, 181 !important;
+	--home-text-color: rgb(76, 79, 105) !important;
+	--home-text-secondary-color: rgb(124, 127, 147) !important;
+	--home-text-tertiary-color: rgb(172, 176, 190) !important;
+	--home-text-ghost-color: rgb(220, 224, 232) !important;
+	--home-success-color: rgb(28, 147, 191) !important;
+	--home-info-color: rgb(114, 135, 253) !important;
+	--home-warn-color: rgb(243, 149, 18) !important;
+	--home-danger-color: rgb(230, 69, 83) !important;
+	--home-empty-color: rgb(188, 192, 204) !important;
+	--home-background-color--rgb: 251, 252, 253 !important;
+	--home-card-border-color: rgb(220, 224, 232) !important;
+	--home-image-background-color: rgb(247, 248, 252) !important;
 	--theme-just-kidding-text-color: hsl(232, 10%, 53%);
 	--theme-accent-color: rgb(var(--theme-accent-color--rgb)) !important;
 	--theme-secondary-color: rgb(var(--theme-secondary-color--rgb)) !important;
 	--theme-text-color: rgb(var(--theme-text-color--rgb)) !important;
 	--theme-card-background-color: rgb(var(--theme-card-background-color--rgb)) !important;
+	--home-accent-color: rgb(var(--home-accent-color--rgb)) !important;
+	--home-secondary-color: rgb(var(--home-secondary-color--rgb)) !important;
+	--home-background-color: rgb(var(--home-background-color--rgb)) !important;
 }
 
 /* Tabs */
@@ -48,6 +72,7 @@ body.skin-moeskin .n-button--default-type:not(.n-button--color) {
 	--n-border-focus: 1px solid var(--theme-button-color--active) !important;
 	--n-border-disabled: 1px solid var(--theme-just-kidding-text-color) !important;
 }
+
 body.skin-moeskin .n-button--primary-type {
 	--n-color: var(--theme-button-color) !important;
 	--n-color-hover: var(--theme-button-color--hover) !important;
@@ -76,14 +101,28 @@ body.skin-moeskin .mobile-edit-button a:visited {
 	color: var(--n-text-color-pressed);
 }
 
+/* Input */
+body.skin-moeskin .n-input {
+	--n-border: 1px solid var(--theme-input-border-color) !important;
+	--n-border-hover: 1px solid var(--theme-button-color--hover) !important;
+	--n-border-focus: 1px solid var(--theme-button-color--active) !important;
+	--n-border-disabled: 1px solid var(--theme-just-kidding-text-color) !important;
+}
+
 body.skin-moeskin img[src="https://app.moegirl.org.cn/img/MoeSkin_feedback_icon_green.png"] {
 	filter: hue-rotate(79deg) brightness(.76);
 }
 
 body.skin-moeskin.page-Mainpage .header-icon {
-	filter: hue-rotate(67deg) brightness(.82);
+	filter: hue-rotate(74deg) brightness(.88);
 }
 
-body.skin-moeskin.page-Mainpage .home-topics::after, .home-card::after {
+body.skin-moeskin.page-Mainpage .home-topics::after,
+body.skin-moeskin.page-Mainpage .home-card::after,
+body.skin-moeskin.page-Mainpage .sitelogo {
 	filter: hue-rotate(74deg);
+}
+
+body.skin-moeskin.page-Mainpage .n-tag__icon {
+	filter: hue-rotate(67deg) brightness(.82);
 }
