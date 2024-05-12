@@ -29,19 +29,19 @@
 	--theme-input-border-color--hover: #CCD0DA !important;
 	--theme-list-item-background-color: rgb(230, 233, 239) !important;
 	--theme-list-item-background-color--hover: rgba(41, 155, 194, .16) !important;
-	--home-accent-color--rgb: 26, 162, 170 !important;
-	--home-secondary-color--rgb: 32, 159, 181 !important;
-	--home-text-color: rgb(76, 79, 105) !important;
+	--home-accent-color--rgb: var(--theme-accent-color--rgb) !important;
+	--home-secondary-color--rgb: var(--theme-secondary-color--rgb) !important;
+	--home-text-color: rgb(var(--theme-text-color--rgb)) !important;
 	--home-text-secondary-color: rgb(124, 127, 147) !important;
 	--home-text-tertiary-color: rgb(172, 176, 190) !important;
 	--home-text-ghost-color: rgb(220, 224, 232) !important;
-	--home-success-color: rgb(28, 147, 191) !important;
-	--home-info-color: rgb(114, 135, 253) !important;
-	--home-warn-color: rgb(243, 149, 18) !important;
-	--home-danger-color: rgb(230, 69, 83) !important;
-	--home-empty-color: rgb(188, 192, 204) !important;
+	--home-success-color: var(--theme-success-color) !important;
+	--home-info-color: var(--theme-info-color) !important;
+	--home-warn-color: var(--theme-warn-color) !important;
+	--home-danger-color: var(--theme-danger-color) !important;
+	--home-empty-color: var(--theme-empty-color) !important;
 	--home-background-color--rgb: 251, 252, 253 !important;
-	--home-card-border-color: rgb(220, 224, 232) !important;
+	--home-card-border-color: var(--theme-card-border-color) !important;
 	--home-image-background-color: rgb(247, 248, 252) !important;
 	--theme-just-kidding-text-color: hsl(232, 10%, 53%);
 	--theme-accent-color: rgb(var(--theme-accent-color--rgb)) !important;
@@ -51,6 +51,17 @@
 	--home-accent-color: rgb(var(--home-accent-color--rgb)) !important;
 	--home-secondary-color: rgb(var(--home-secondary-color--rgb)) !important;
 	--home-background-color: rgb(var(--home-background-color--rgb)) !important;
+	--theme-divider-color: rgb(241, 242, 250) !important;
+	--theme-item-text-color: rgb(51, 53, 71) !important;
+	--theme-item-text-color-hover: rgb(51, 53, 71) !important;
+	--theme-item-icon-color: rgb(31, 33, 51) !important;
+	--theme-item-icon-color-hover: rgb(31, 33, 51) !important;
+	--theme-item-text-color-hover-horizontal: #29959B !important;
+	--theme-item-icon-color-hover-horizontal: #29959B !important;
+	--theme-item-color-hover: rgb(245, 246, 250) !important;
+	--theme-item-color-active: rgba(26, 162, 170, 0.1) !important;
+	--theme-item-color-active-hover: rgba(26, 162, 170, 0.1) !important;
+	--theme-item-color-active-collpased: rgba(26, 162, 170, 0.1) !important;
 }
 
 /* Tabs */
@@ -101,12 +112,68 @@ body.skin-moeskin .mobile-edit-button a:visited {
 	color: var(--n-text-color-pressed);
 }
 
+/* Menu */
+body.skin-moeskin .n-menu {
+	--n-divider-color: var(--theme-divider-color) !important;
+	--n-item-text-color: var(--theme-item-text-color) !important;
+	--n-item-text-color-hover: var(--theme-item-text-color-hover) !important;
+	--n-item-text-color-active: var(--theme-accent-color) !important;
+	--n-item-text-color-child-active: var(--theme-accent-color) !important;
+	--n-item-text-color-child-active-hover: var(--theme-accent-color) !important;
+	--n-item-text-color-active-hover: var(--theme-accent-color) !important;
+	--n-item-icon-color: var(--theme-item-icon-color) !important;
+	--n-item-icon-color-hover: var(--theme-item-icon-color-hover) !important;
+	--n-item-icon-color-active: var(--theme-accent-color) !important;
+	--n-item-icon-color-active-hover: var(--theme-accent-color) !important;
+	--n-item-icon-color-child-active: var(--theme-accent-color) !important;
+	--n-item-icon-color-child-active-hover: var(--theme-accent-color) !important;
+	--n-item-icon-color-collapsed: var(--theme-item-icon-color) !important;
+	--n-item-text-color-horizontal: var(--theme-item-text-color) !important;
+	--n-item-text-color-hover-horizontal: var(--theme-item-text-color-hover-horizontal) !important;
+	--n-item-text-color-active-horizontal: var(--theme-item-text-color) !important;
+	--n-item-text-color-child-active-horizontal: var(--theme-item-text-color) !important;
+	--n-item-text-color-child-active-hover-horizontal: var(--theme-item-text-color) !important;
+	--n-item-text-color-active-hover-horizontal: var(--theme-item-text-color) !important;
+	--n-item-icon-color-horizontal: var(--theme-item-icon-color) !important;
+	--n-item-icon-color-hover-horizontal: var(--theme-item-icon-color-hover-horizontal) !important;
+	--n-item-icon-color-active-horizontal: var(--theme-accent-color) !important;
+	--n-item-icon-color-active-hover-horizontal: var(--theme-accent-color) !important;
+	--n-item-icon-color-child-active-horizontal: var(--theme-accent-color) !important;
+	--n-item-icon-color-child-active-hover-horizontal: var(--theme-accent-color) !important;
+	--n-arrow-color: var(--theme-item-text-color) !important;
+	--n-arrow-color-hover: var(--theme-item-text-color) !important;
+	--n-arrow-color-active: var(--theme-accent-color) !important;
+	--n-arrow-color-active-hover: var(--theme-accent-color) !important;
+	--n-arrow-color-child-active: var(--theme-accent-color) !important;
+	--n-arrow-color-child-active-hover: var(--theme-accent-color) !important;
+	--n-item-color-hover: var(--theme-item-color-hover) !important;
+	--n-item-color-active: var(--theme-item-color-active) !important;
+	--n-item-color-active-hover: var(--theme-item-color-active-hover) !important;
+	--n-item-color-active-collapsed: var(--theme-item-color-active-collapsed) !important;
+}
+
+/* Message */
+body.skin-moeskin .n-message-wrapper {
+	--n-text-color: var(--theme-text-color) !important;
+	--n-icon-color-info: var(--theme-info-color) !important;
+	--n-icon-color-success: var(--theme-success-color) !important;
+	--n-icon-color-warning: var(--theme-warn-color) !important;
+	--n-icon-color-error: var(--theme-danger-color) !important;
+	--n-icon-color-loading: var(--theme-accent-color) !important;
+}
+
 /* Input */
 body.skin-moeskin .n-input {
 	--n-border: 1px solid var(--theme-input-border-color) !important;
 	--n-border-hover: 1px solid var(--theme-button-color--hover) !important;
 	--n-border-focus: 1px solid var(--theme-button-color--active) !important;
 	--n-border-disabled: 1px solid var(--theme-just-kidding-text-color) !important;
+}
+
+/* Spin */
+body.skin-moeskin .n-spin {
+	--n-color: var(--theme-accent-color) !important;
+	--n-text-color: var(--theme-accent-color) !important;
 }
 
 body.skin-moeskin img[src="https://app.moegirl.org.cn/img/MoeSkin_feedback_icon_green.png"] {
