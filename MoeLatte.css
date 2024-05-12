@@ -72,12 +72,15 @@ body.skin-moeskin .n-tabs {
 }
 
 /* Button  */
-body.skin-moeskin .n-button--default-type:not(.n-button--color) {
+body.skin-moeskin .n-button--default-type:not(.n-button--color),
+body.skin-moeskin #p-purge-cache .n-button {
+	--n-ripple-color: var(--theme-button-color) !important;
 	--n-text-color: var(--theme-text-color) !important;
 	--n-text-color-hover: var(--theme-button-color--hover) !important;
 	--n-text-color-pressed: var(--theme-button-color--active) !important;
 	--n-text-color-focus: var(--theme-button-color--active) !important;
 	--n-text-color-disabled: var(--theme-just-kidding-text-color) !important;
+	--n-border: 1px solid var(--theme-border-color) !important;
 	--n-border-hover: 1px solid var(--theme-button-color--hover) !important;
 	--n-border-pressed: 1px solid var(--theme-button-color--active) !important;
 	--n-border-focus: 1px solid var(--theme-button-color--active) !important;
@@ -110,6 +113,29 @@ body.skin-moeskin .n-badge {
 
 body.skin-moeskin .mobile-edit-button a:visited {
 	color: var(--n-text-color-pressed);
+}
+
+body.skin-moeskin .noteTA-button > button {
+	border: 1px solid var(--theme-border-color);
+}
+
+body.skin-moeskin .noteTAViewer-button:hover {
+	border-color: var(--theme-button-color--hover);
+	color: var(--theme-button-color--hover);
+}
+
+body.skin-moeskin .noteTAViewer-button:active,
+body.skin-moeskin .noteTAViewer-button:focus {
+	border-color: var(--theme-button-color--active);
+	color: var(--theme-button-color--active);
+}
+
+body.skin-moeskin .noteTAViewer-button:active::after {
+	box-shadow: 0 0 0 0 var(--theme-button-color);
+}
+
+body.skin-moeskin .noteTAViewer-button::after {
+	box-shadow: 0 0 0 6px var(--theme-button-color);
 }
 
 /* Menu */
