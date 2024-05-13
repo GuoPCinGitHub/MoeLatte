@@ -21,7 +21,7 @@
 	--theme-toolbar-background-color: rgb(237, 246, 248) !important;
 	--theme-success-color: rgb(28, 147, 191) !important;
 	--theme-info-color: rgb(114, 135, 253) !important;
-	--theme-warn-color: rgb(243, 149, 18) !important;
+	--theme-warn-color: rgb(223, 142, 29) !important;
 	--theme-danger-color: rgb(230, 69, 83) !important;
 	--theme-empty-color: rgb(188, 192, 204) !important;
 	--theme-input-background-color: rgb(247, 248, 250) !important;
@@ -218,4 +218,16 @@ body.skin-moeskin.page-Mainpage .sitelogo {
 
 body.skin-moeskin.page-Mainpage .n-tag__icon {
 	filter: hue-rotate(67deg) brightness(.82);
+}
+
+body.skin-moeskin #pagehistory [data-mw-mod-status="1"] .mod-icon {
+	color: var(--theme-success-color);
+}
+
+body.skin-moeskin #pagehistory [data-mw-mod-status="2"] .mod-icon {
+	color: var(--theme-danger-color);
+}
+
+body.skin-moeskin #pagehistory [data-mw-is-latest-approved="true"] .mod-icon {
+	color: var(--theme-warn-color);
 }
