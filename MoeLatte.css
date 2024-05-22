@@ -71,7 +71,7 @@ body.skin-moeskin .n-tabs {
 	--n-tab-text-color-hover: var(--theme-button-color--hover) !important;
 }
 
-/* Button  */
+/* Button */
 body.skin-moeskin .n-button--default-type:not(.n-button--color),
 body.skin-moeskin #p-purge-cache .n-button {
 	--n-ripple-color: var(--theme-button-color) !important;
@@ -130,13 +130,14 @@ body.skin-moeskin .noteTAViewer-button:focus {
 	color: var(--theme-button-color--active);
 }
 
+body.skin-moeskin .noteTAViewer-button::after {
+	box-shadow: 0 0 0 6px var(--theme-button-color);
+}
+
 body.skin-moeskin .noteTAViewer-button:active::after {
 	box-shadow: 0 0 0 0 var(--theme-button-color);
 }
 
-body.skin-moeskin .noteTAViewer-button::after {
-	box-shadow: 0 0 0 6px var(--theme-button-color);
-}
 
 /* Menu */
 body.skin-moeskin .n-menu {
@@ -202,6 +203,7 @@ body.skin-moeskin .n-spin {
 	--n-text-color: var(--theme-accent-color) !important;
 }
 
+/* Other */
 body.skin-moeskin img[src="https://app.moegirl.org.cn/img/MoeSkin_feedback_icon_green.png"] {
 	filter: hue-rotate(79deg) brightness(.76);
 }
@@ -220,6 +222,27 @@ body.skin-moeskin.page-Mainpage .n-tag__icon {
 	filter: hue-rotate(67deg) brightness(.82);
 }
 
+body.skin-moeskin.page-Mainpage .n-pagination-item.n-pagination-item--active.n-pagination-item--clickable {
+	color: var(--theme-accent-color);
+	border: 1px solid var(--theme-accent-color);
+}
+
+body.skin-moeskin.page-Mainpage .n-pagination .n-pagination-item:not(.n-pagination-item--disabled):hover {
+	color: var(--theme-accent-color);
+}
+
+body.skin-moeskin.page-Mainpage .home-topic-ordered-card .index-tag.no-1 {
+	background-color: #1893BF;
+}
+
+body.skin-moeskin.page-Mainpage .home-topic-ordered-card .index-tag.no-2 {
+	background-color: #1893BFBF;
+}
+
+body.skin-moeskin.page-Mainpage .home-topic-ordered-card .index-tag.no-3 {
+	background-color: #1893BF80;
+}
+
 body.skin-moeskin #pagehistory [data-mw-mod-status="1"] .mod-icon {
 	color: var(--theme-success-color);
 }
@@ -230,4 +253,16 @@ body.skin-moeskin #pagehistory [data-mw-mod-status="2"] .mod-icon {
 
 body.skin-moeskin #pagehistory [data-mw-is-latest-approved="true"] .mod-icon {
 	color: var(--theme-warn-color);
+}
+
+body.skin-moeskin .mw-changeslist .mod-icon[title="Approved"] svg {
+	fill: var(--theme-success-color);
+}
+
+body.skin-moeskin .mw-changeslist .mod-icon[title="Rejected"] svg {
+	fill: var(--theme-danger-color);
+}
+
+body.skin-moeskin .mw-changeslist .mod-icon[title="Pending"] svg {
+	fill: currentColor;
 }
