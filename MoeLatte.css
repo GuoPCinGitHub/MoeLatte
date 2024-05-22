@@ -255,14 +255,17 @@ body.skin-moeskin #pagehistory [data-mw-is-latest-approved="true"] .mod-icon {
 	color: var(--theme-warn-color);
 }
 
-body.skin-moeskin .mw-changeslist .mod-icon[title="Approved"] svg {
+body.skin-moeskin .mw-changeslist .mod-icon[title="Approved"] svg,
+body.skin-moeskin .mw-contributions-list .mod-icon[title="Approved"] svg {
 	fill: var(--theme-success-color);
 }
 
-body.skin-moeskin .mw-changeslist .mod-icon[title="Rejected"] svg {
+body.skin-moeskin .mw-changeslist .mod-icon[title="Rejected"] svg,
+body.skin-moeskin .mw-contributions-list .mod-icon[title="Rejected"] svg {
 	fill: var(--theme-danger-color);
 }
 
-body.skin-moeskin .mw-changeslist .mod-icon[title="Pending"] svg {
+body.skin-moeskin .mw-changeslist .mod-icon[title="Pending"] svg,
+body.skin-moeskin .mw-contributions-list .mod-icon[title="Pending"] svg {
 	fill: currentColor;
 }
