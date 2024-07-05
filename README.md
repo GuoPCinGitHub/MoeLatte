@@ -5,11 +5,11 @@
 &nbsp;
 
 <p align="center">
-  MoeLatte是基于<a href="https://catppuccin.com/">Catppuccin Theme</a>中的Latte调色风格制作的一款用于MoeSkin皮肤的主题包。
+  MoeLatte 是基于 <a href="https://catppuccin.com/">Catppuccin Theme</a> 中的 Latte 调色风格制作的一款用于 MoeSkin 皮肤的主题包。
 </p>
 
 <p align="center">
-  采用了Latte中的绿—蓝系列色作为主要配色，并进行了一定调整。 
+  采用了 Latte 中的绿—蓝系列色作为主要配色，并进行了一定调整。 
 </p>
 
 &nbsp;
