@@ -74,6 +74,11 @@ body.skin-moeskin .n-tabs {
 /* Button */
 body.skin-moeskin .n-button--default-type:not(.n-button--color),
 body.skin-moeskin #p-purge-cache .n-button {
+	--n-color: rgba(68, 74, 105, .05) !important;
+	--n-color-hover: rgba(68, 74, 105, .09) !important;
+	--n-color-pressed: rgba(68, 74, 105, .13) !important;
+	--n-color-focus: rgba(68, 74, 105, .09) !important;
+	--n-color-disabled: rgba(68, 74, 105, .05) !important;
 	--n-ripple-color: var(--theme-button-color) !important;
 	--n-text-color: var(--theme-text-color) !important;
 	--n-text-color-hover: var(--theme-button-color--hover) !important;
@@ -85,6 +90,24 @@ body.skin-moeskin #p-purge-cache .n-button {
 	--n-border-pressed: 1px solid var(--theme-button-color--active) !important;
 	--n-border-focus: 1px solid var(--theme-button-color--active) !important;
 	--n-border-disabled: 1px solid var(--theme-just-kidding-text-color) !important;
+}
+
+body.skin-moeskin .n-button--error-type:not(.n-button--color) {
+	--n-color: rgba(230, 69, 83, .16) !important;
+	--n-color-hover: rgba(230, 69, 83, .22) !important;
+	--n-color-pressed: rgba(230, 69, 83, .28) !important;
+	--n-color-focus: rgba(230, 69, 83, .22) !important;
+	--n-color-disabled: rgba(230, 69, 83, .05) !important;
+	--n-text-color: var(--theme-danger-color) !important;
+	--n-text-color-hover: var(--theme-danger-color) !important;
+	--n-text-color-pressed: var(--theme-danger-color) !important;
+	--n-text-color-focus: var(--theme-danger-color) !important;
+	--n-text-color-disabled: var(--theme-danger-color) !important;
+	--n-border: 1px solid var(--theme-danger-color) !important;
+	--n-border-hover: 1px solid #F26F79 !important;
+	--n-border-pressed: 1px solid #D9364A !important;
+	--n-border-focus: 1px solid #F26F79 !important;
+	--n-border-disabled: 1px solid var(--theme-danger-color) !important;
 }
 
 body.skin-moeskin .n-button--primary-type {
