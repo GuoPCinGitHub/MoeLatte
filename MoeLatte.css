@@ -139,7 +139,7 @@
 }
 
 /* Tabs */
-body.skin-moeskin .n-tabs {
+body:not(.skin-vector) .n-tabs {
 	--n-bar-color: var(--theme-button-color) !important;
 	--n-tab-text-color: var(--theme-button-color) !important;
 	--n-tab-text-color-active: var(--theme-button-color--active) !important;
@@ -148,8 +148,8 @@ body.skin-moeskin .n-tabs {
 }
 
 /* Button */
-body.skin-moeskin .n-button--default-type:not(.n-button--color),
-body.skin-moeskin #p-purge-cache .n-button {
+body:not(.skin-vector) .n-button--default-type:not(.n-button--color),
+body:not(.skin-vector) #p-purge-cache .n-button {
 	--n-ripple-color: var(--theme-button-color) !important;
 	--n-text-color: var(--theme-text-color) !important;
 	--n-text-color-hover: var(--theme-button-color--hover) !important;
@@ -163,7 +163,7 @@ body.skin-moeskin #p-purge-cache .n-button {
 	--n-border-disabled: 1px solid var(--theme-just-kidding-text-color) !important;
 }
 
-body.skin-moeskin .n-button--success-type:not(.n-button--color) {
+body:not(.skin-vector) .n-button--success-type:not(.n-button--color) {
 	--n-color: rgba(28, 147, 191, .16) !important;
 	--n-color-hover: rgba(28, 147, 191, .22) !important;
 	--n-color-pressed: rgba(28, 147, 191, .28) !important;
@@ -181,7 +181,7 @@ body.skin-moeskin .n-button--success-type:not(.n-button--color) {
 	--n-border-disabled: 1px solid var(--theme-success-color) !important;
 }
 
-body.skin-moeskin .n-button--info-type:not(.n-button--color) {
+body:not(.skin-vector) .n-button--info-type:not(.n-button--color) {
 	--n-color: rgba(114, 135, 253, .16) !important;
 	--n-color-hover: rgba(114, 135, 253, .22) !important;
 	--n-color-pressed: rgba(114, 135, 253, .28) !important;
@@ -199,7 +199,7 @@ body.skin-moeskin .n-button--info-type:not(.n-button--color) {
 	--n-border-disabled: 1px solid var(--theme-info-color) !important;
 }
 
-body.skin-moeskin .n-button--error-type:not(.n-button--color) {
+body:not(.skin-vector) .n-button--error-type:not(.n-button--color) {
 	--n-color: rgba(230, 69, 83, .16) !important;
 	--n-color-hover: rgba(230, 69, 83, .22) !important;
 	--n-color-pressed: rgba(230, 69, 83, .28) !important;
@@ -217,7 +217,7 @@ body.skin-moeskin .n-button--error-type:not(.n-button--color) {
 	--n-border-disabled: 1px solid var(--theme-danger-color) !important;
 }
 
-body.skin-moeskin .n-button--primary-type:not(.n-button--color) {
+body:not(.skin-vector) .n-button--primary-type:not(.n-button--color) {
 	--n-color: var(--theme-button-color) !important;
 	--n-color-hover: var(--theme-button-color--hover) !important;
 	--n-color-pressed: var(--theme-button-color--active) !important;
@@ -236,40 +236,47 @@ body.skin-moeskin .n-button--primary-type:not(.n-button--color) {
 	--n-border-disabled: 1px solid var(--theme-just-kidding-text-color) !important;
 }
 
-body.skin-moeskin .n-badge {
+body:not(.skin-vector) .n-badge {
 	--n-color: var(--theme-danger-color) !important;
 	--n-ripple-color: var(--theme-danger-color) !important;
 }
 
-body.skin-moeskin .mobile-edit-button a:visited {
+body:not(.skin-vector) .mobile-edit-button a:visited {
 	color: var(--n-text-color-pressed);
 }
 
-body.skin-moeskin .noteTA-button > button {
+body:not(.skin-vector) .noteTA-button > button {
 	border: 1px solid var(--theme-border-color);
 }
 
-body.skin-moeskin .noteTAViewer-button:hover {
+body:not(.skin-vector) .noteTAViewer-button:hover {
 	border-color: var(--theme-button-color--hover);
 	color: var(--theme-button-color--hover);
 }
 
-body.skin-moeskin .noteTAViewer-button:active,
-body.skin-moeskin .noteTAViewer-button:focus {
+body:not(.skin-vector) .noteTAViewer-button:active,
+body:not(.skin-vector) .noteTAViewer-button:focus {
 	border-color: var(--theme-button-color--active);
 	color: var(--theme-button-color--active);
 }
 
-body.skin-moeskin .noteTAViewer-button::after {
+body:not(.skin-vector) .noteTAViewer-button::after {
 	box-shadow: 0 0 0 6px var(--theme-button-color);
 }
 
-body.skin-moeskin .noteTAViewer-button:active::after {
+body:not(.skin-vector) .noteTAViewer-button:active::after {
 	box-shadow: 0 0 0 0 var(--theme-button-color);
 }
 
+/* Drawer */
+body:not(.skin-vector) .n-drawer-container {
+	--n-text-color: var(--theme-text-color) !important;
+	--n-title-text-color: var(--theme-text-color) !important;
+	--n-resize-trigger-color-hover: var(rgb(--theme-accent-color--rgb)) !important;
+}
+
 /* Menu */
-body.skin-moeskin .n-menu {
+body:not(.skin-vector) .n-menu {
 	--n-divider-color: var(--theme-divider-color) !important;
 	--n-item-text-color: var(--theme-item-text-color) !important;
 	--n-item-text-color-hover: var(--theme-item-text-color-hover) !important;
@@ -308,8 +315,8 @@ body.skin-moeskin .n-menu {
 	--n-item-color-active-collapsed: var(--theme-item-color-active-collapsed) !important;
 }
 
-body.skin-moeskin .n-base-select-menu,
-body.skin-moeskin .n-dropdown-menu {
+body:not(.skin-vector) .n-base-select-menu,
+body:not(.skin-vector) .n-dropdown-menu {
 	--n-action-divider-color: var(--theme-divider-color) !important;
 	--n-action-text-color: var(--theme-text-color) !important;
 	--n-color: var(--theme-background-color) !important;
@@ -320,7 +327,7 @@ body.skin-moeskin .n-dropdown-menu {
 }
 
 /* Message */
-body.skin-moeskin .n-message-wrapper {
+body:not(.skin-vector) .n-message-wrapper {
 	--n-text-color: var(--theme-text-color) !important;
 	--n-icon-color-info: var(--theme-info-color) !important;
 	--n-icon-color-success: var(--theme-success-color) !important;
@@ -330,7 +337,7 @@ body.skin-moeskin .n-message-wrapper {
 }
 
 /* Input */
-body.skin-moeskin .n-input {
+body:not(.skin-vector) .n-input {
 	--n-border: 1px solid var(--theme-input-border-color) !important;
 	--n-border-hover: 1px solid var(--theme-button-color--hover) !important;
 	--n-border-focus: 1px solid var(--theme-button-color--active) !important;
@@ -342,113 +349,121 @@ body.skin-moeskin .n-input {
 }
 
 /* Spin */
-body.skin-moeskin .n-spin {
+body:not(.skin-vector) .n-spin {
 	--n-color: var(--theme-accent-color) !important;
 	--n-text-color: var(--theme-accent-color) !important;
 }
 
 /* Text */
-body.skin-moeskin .n-text {
+body:not(.skin-vector) .n-text {
 	--n-text-color: var(--theme-text-color) !important;
 	--n-code-text-color: var(--theme-code-text-color) !important;
 	--n-code-color: var(--theme-code-color) !important;
 }
 
-body.skin-moeskin .n-gradient-text--success-type {
+body:not(.skin-vector) .n-gradient-text--success-type {
 	--n-color-start: rgba(28, 147, 191, .6) !important;
 	--n-color-end: var(--theme-success-color) !important;
 }
 
-body.skin-moeskin .n-gradient-text--error-type {
+body:not(.skin-vector) .n-gradient-text--error-type {
 	--n-color-start: rgba(230, 69, 83, .6) !important;
 	--n-color-end: var(--theme-danger-color) !important;
 }
 
-body.skin-moeskin .n-p {
+body:not(.skin-vector) .n-p {
 	--n-text-color: var(--theme-text-color) !important;
 }
 
-body.skin-moeskin .n-h {
+body:not(.skin-vector) .n-h {
 	--n-bar-color: var(--theme-accent-color) !important;
 	--n-text-color: var(--theme-text-color) !important;
 }
 
-body.skin-moeskin .n-a {
+body:not(.skin-vector) .n-a {
 	color: var(--theme-accent-color) !important;
 	text-decoration-color: var(--theme-accent-color) !important;
 }
 
 /* Other */
-body.skin-moeskin img[src="https://app.moegirl.org.cn/img/MoeSkin_feedback_icon_green.png"] {
+body:not(.skin-vector) img[src="https://app.moegirl.org.cn/img/MoeSkin_feedback_icon_green.png"] {
 	filter: hue-rotate(79deg) brightness(.76);
 }
 
-body.skin-moeskin.page-Mainpage .header-icon {
+body:not(.skin-vector).page-Mainpage .header-icon {
 	filter: hue-rotate(74deg) brightness(.88);
 }
 
-body.skin-moeskin.page-Mainpage .home-topics::after,
-body.skin-moeskin.page-Mainpage .home-card::after,
-body.skin-moeskin.page-Mainpage .sitelogo {
+body:not(.skin-vector).page-Mainpage .home-topics::after,
+body:not(.skin-vector).page-Mainpage .home-card::after,
+body:not(.skin-vector).page-Mainpage .sitelogo {
 	filter: hue-rotate(74deg);
 }
 
-body.skin-moeskin.page-Mainpage .n-tag__icon {
+body:not(.skin-vector).page-Mainpage .n-tag__icon {
 	filter: hue-rotate(67deg) brightness(.82);
 }
 
-body.skin-moeskin.page-Mainpage .n-pagination-item {
+body:not(.skin-vector).page-Mainpage .n-pagination-item {
 	--n-item-text-color: var(--theme-item-text-color) !important;
 }
 
-body.skin-moeskin.page-Mainpage .n-pagination-item.n-pagination-item--active.n-pagination-item--clickable {
+body:not(.skin-vector).page-Mainpage .n-pagination-item.n-pagination-item--active.n-pagination-item--clickable {
 	color: var(--theme-accent-color);
 	border: 1px solid var(--theme-accent-color);
 }
 
-body.skin-moeskin.page-Mainpage .n-pagination .n-pagination-item:not(.n-pagination-item--disabled):hover {
+body:not(.skin-vector).page-Mainpage .n-pagination .n-pagination-item:not(.n-pagination-item--disabled):hover {
 	color: var(--theme-accent-color);
 }
 
-body.skin-moeskin.page-Mainpage .home-topic-ordered-card .index-tag.no-1 {
+body:not(.skin-vector).page-Mainpage .home-topic-ordered-card .index-tag.no-1 {
 	background-color: #1893BF;
 }
 
-body.skin-moeskin.page-Mainpage .home-topic-ordered-card .index-tag.no-2 {
+body:not(.skin-vector).page-Mainpage .home-topic-ordered-card .index-tag.no-2 {
 	background-color: #1893BFBF;
 }
 
-body.skin-moeskin.page-Mainpage .home-topic-ordered-card .index-tag.no-3 {
+body:not(.skin-vector).page-Mainpage .home-topic-ordered-card .index-tag.no-3 {
 	background-color: #1893BF80;
 }
 
-body.skin-moeskin.page-Mainpage .banner-gallery .gallery-details .read-more {
+body:not(.skin-vector).page-Mainpage .banner-gallery .gallery-details .read-more {
 	color: var(--theme-accent-color);
 }
 
-body.skin-moeskin #pagehistory [data-mw-mod-status="1"] .mod-icon {
+body:not(.skin-vector) #pagehistory [data-mw-mod-status="1"] .mod-icon {
 	color: var(--theme-success-color);
 }
 
-body.skin-moeskin #pagehistory [data-mw-mod-status="2"] .mod-icon {
+body:not(.skin-vector) #pagehistory [data-mw-mod-status="2"] .mod-icon {
 	color: var(--theme-danger-color);
 }
 
-body.skin-moeskin #pagehistory [data-mw-is-latest-approved="true"] .mod-icon {
+body:not(.skin-vector) #pagehistory [data-mw-is-latest-approved="true"] .mod-icon {
 	color: var(--theme-warn-color);
 }
 
-body.skin-moeskin .mw-changeslist .mod-icon[title="Approved"] svg,
-body.skin-moeskin .mw-contributions-list .mod-icon[title="Approved"] svg {
+body:not(.skin-vector) .mw-changeslist .mod-icon[title="Approved"] svg,
+body:not(.skin-vector) .mw-contributions-list .mod-icon[title="Approved"] svg {
 	fill: var(--theme-success-color);
 }
 
-body.skin-moeskin .mw-changeslist .mod-icon[title="Rejected"] svg,
-body.skin-moeskin .mw-contributions-list .mod-icon[title="Rejected"] svg {
+body:not(.skin-vector) .mw-changeslist .mod-icon[title="Rejected"] svg,
+body:not(.skin-vector) .mw-contributions-list .mod-icon[title="Rejected"] svg {
 	fill: var(--theme-danger-color);
 }
 
-body.skin-moeskin .mw-changeslist .mod-icon[title="Pending"] svg,
-body.skin-moeskin .mw-contributions-list .mod-icon[title="Pending"] svg {
+body:not(.skin-vector) .mw-changeslist .mod-icon[title="Pending"] svg,
+body:not(.skin-vector) .mw-contributions-list .mod-icon[title="Pending"] svg {
 	fill: currentColor;
+}
+
+body:not(.skin-vector) [text~="#18a058"] {
+	color: rgb(14 148 156 / var(--un-text-opacity)) !important;
+}
+
+body:not(.skin-vector) [bg~="#dcf1e0"] {
+	background-color: rgb(230 233 239 / var(--un-text-opacity)) !important;
 }
