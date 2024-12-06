@@ -390,13 +390,17 @@ body:not(.skin-vector) img[src="https://app.moegirl.org.cn/img/MoeSkin_feedback_
 	filter: hue-rotate(79deg) brightness(.76);
 }
 
+body:not(.skin-vector) .sidenav-header-title img[src$="MoegirlPedia-Title-green.svg"] {
+	filter: hue-rotate(74deg);
+}
+
 body:not(.skin-vector).page-Mainpage .header-icon {
 	filter: hue-rotate(74deg) brightness(.88);
 }
 
 body:not(.skin-vector).page-Mainpage .home-topics::after,
 body:not(.skin-vector).page-Mainpage .home-card::after,
-body:not(.skin-vector).page-Mainpage .sitelogo {
+body:not(.skin-vector).page-Mainpage .sitelogo img {
 	filter: hue-rotate(74deg);
 }
 
@@ -466,4 +470,16 @@ body:not(.skin-vector) [text~="#18a058"] {
 
 body:not(.skin-vector) [bg~="#dcf1e0"] {
 	background-color: rgb(230 233 239 / var(--un-text-opacity)) !important;
+}
+
+body:not(.skin-vector) .popup_mainlink a {
+	color: var(--theme-text-color);
+}
+
+body:not(.skin-vector) .popup_drop a:not(:hover) {
+	color: var(--theme-link-color);
+}
+
+body:not(.skin-vector) .popup_drop a:visited {
+	color: var(--theme-link-color--visited);
 }
