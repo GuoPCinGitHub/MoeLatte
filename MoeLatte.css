@@ -464,6 +464,10 @@ body:not(.skin-vector) .mw-contributions-list .mod-icon[title="Pending"] svg {
 	fill: currentColor;
 }
 
+body:not(.skin-vector) div.mw-warning-with-logexcerpt {
+	border-color: var(--theme-link-color);
+}
+
 body:not(.skin-vector) [text~="#18a058"] {
 	color: rgb(14 148 156 / var(--un-text-opacity)) !important;
 }
