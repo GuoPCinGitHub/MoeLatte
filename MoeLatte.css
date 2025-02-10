@@ -437,31 +437,45 @@ body:not(.skin-vector).page-Mainpage .banner-gallery .gallery-details .read-more
 	color: var(--theme-accent-color);
 }
 
-body:not(.skin-vector) #pagehistory [data-mw-mod-status="1"] .mod-icon {
-	color: var(--theme-success-color);
+body:not(.skin-vector) .mod-status-tag.status-pending,
+body:not(.skin-vector) .mod-status-icon.status-pending,
+body:not(.skin-vector) .mod-status-tag.status-0,
+body:not(.skin-vector) .mod-status-icon.status-0 {
+	background: var(--theme-info-color);
 }
 
-body:not(.skin-vector) #pagehistory [data-mw-mod-status="2"] .mod-icon {
-	color: var(--theme-danger-color);
+body:not(.skin-vector) .mod-status-tag.status-approved,
+body:not(.skin-vector) .mod-status-icon.status-approved,
+body:not(.skin-vector) .mod-status-tag.status-1,
+body:not(.skin-vector) .mod-status-icon.status-1 {
+	background: var(--theme-success-color);
 }
 
-body:not(.skin-vector) #pagehistory [data-mw-is-latest-approved="true"] .mod-icon {
-	color: var(--theme-warn-color);
+body:not(.skin-vector) .mod-status-tag.status-rejected,
+body:not(.skin-vector) .mod-status-icon.status-rejected,
+body:not(.skin-vector) .mod-status-tag.status-2,
+body:not(.skin-vector) .mod-status-icon.status-2 {
+	background: var(--theme-danger-color);
 }
 
-body:not(.skin-vector) .mw-changeslist .mod-icon[title="Approved"] svg,
-body:not(.skin-vector) .mw-contributions-list .mod-icon[title="Approved"] svg {
-	fill: var(--theme-success-color);
+body:not(.skin-vector) .mod-status-tag.status-unsure,
+body:not(.skin-vector) .mod-status-icon.status-unsure,
+body:not(.skin-vector) .mod-status-tag.status-3,
+body:not(.skin-vector) .mod-status-icon.status-3 {
+	background: var(--theme-text-shadow-color);
 }
 
-body:not(.skin-vector) .mw-changeslist .mod-icon[title="Rejected"] svg,
-body:not(.skin-vector) .mw-contributions-list .mod-icon[title="Rejected"] svg {
-	fill: var(--theme-danger-color);
+body:not(.skin-vector) .mod-status-tag.status-skipped,
+body:not(.skin-vector) .mod-status-icon.status-skipped,
+body:not(.skin-vector) .mod-status-tag.status-4,
+body:not(.skin-vector) .mod-status-icon.status-4 {
+	background: var(--theme-background-color);
+	color: var(--theme-empty-color);
 }
 
-body:not(.skin-vector) .mw-changeslist .mod-icon[title="Pending"] svg,
-body:not(.skin-vector) .mw-contributions-list .mod-icon[title="Pending"] svg {
-	fill: currentColor;
+body:not(.skin-vector) .mod-status-tag.status-latest-approved,
+body:not(.skin-vector) .mod-status-icon.status-latest-approved {
+	background: var(--theme-warn-color) !important;
 }
 
 body:not(.skin-vector) div.mw-warning-with-logexcerpt {
