@@ -21,11 +21,16 @@
 	--theme-footer-top-color: rgb(220, 224, 232) !important;
 	--theme-footer-bottom-color: #CCD0DA !important;
 	--theme-toolbar-background-color: rgb(237, 246, 248) !important;
-	--theme-success-color: rgb(28, 147, 191) !important;
-	--theme-info-color: rgb(114, 135, 253) !important;
-	--theme-warn-color: rgb(223, 142, 29) !important;
-	--theme-danger-color: rgb(230, 69, 83) !important;
-	--theme-empty-color: rgb(188, 192, 204) !important;
+	--theme-success-color--rgb: 28, 147, 191 !important;
+	--theme-info-color--rgb: 114, 135, 253 !important;
+	--theme-warn-color--rgb: 223, 142, 29 !important;
+	--theme-danger-color--rgb: 230, 69, 83 !important;
+	--theme-empty-color--rgb: 188, 192, 204 !important;
+	--theme-success-color: rgb(var(--theme-success-color--rgb)) !important;
+	--theme-info-color: rgb(var(--theme-info-color--rgb)) !important;
+	--theme-warn-color: rgb(var(--theme-warn-color--rgb)) !important;
+	--theme-danger-color: rgb(var(--theme-danger-color--rgb)) !important;
+	--theme-empty-color: rgb(var(--theme-empty-color--rgb)) !important;
 	--theme-input-background-color: rgb(247, 248, 250) !important;
 	--theme-input-border-color: rgb(220, 224, 232) !important;
 	--theme-input-border-color--hover: #CCD0DA !important;
@@ -91,11 +96,16 @@
 	--theme-footer-top-color: rgb(55, 64, 83) !important;
 	--theme-footer-bottom-color: #4C4F69 !important;
 	--theme-toolbar-background-color: rgb(58, 59, 78) !important;
-	/*--theme-success-color: rgb(28, 147, 191) !important;*/
-	/*--theme-info-color: rgb(114, 135, 253) !important;*/
-	/*--theme-warn-color: rgb(223, 142, 29) !important;*/
-	/*--theme-danger-color: rgb(230, 69, 83) !important;*/
-	/*--theme-empty-color: rgb(188, 192, 204) !important;*/
+	--theme-success-color--rgb: 150, 216, 240 !important;
+	--theme-info-color--rgb: 153, 167, 254 !important;
+	--theme-warn-color--rgb: 243, 208, 160 !important;
+	--theme-danger-color--rgb: 241, 151, 158 !important;
+	--theme-empty-color--rgb: 207, 209, 218 !important;
+	--theme-success-color: rgb(var(--theme-success-color--rgb)) !important;
+	--theme-info-color: rgb(var(--theme-info-color--rgb)) !important;
+	--theme-warn-color: rgb(var(--theme-warn-color--rgb)) !important;
+	--theme-danger-color: rgb(var(--theme-danger-color--rgb)) !important;
+	--theme-empty-color: rgb(var(--theme-empty-color--rgb)) !important;
 	--theme-input-background-color: rgb(48, 57, 76) !important;
 	--theme-input-border-color: rgb(220, 224, 232) !important;
 	--theme-input-border-color--hover: #CCD0DA !important;
@@ -164,11 +174,11 @@ body:not(.skin-vector) #p-purge-cache .n-button {
 }
 
 body:not(.skin-vector) .n-button--success-type:not(.n-button--color) {
-	--n-color: rgba(28, 147, 191, .16) !important;
-	--n-color-hover: rgba(28, 147, 191, .22) !important;
-	--n-color-pressed: rgba(28, 147, 191, .28) !important;
-	--n-color-focus: rgba(28, 147, 191, .22) !important;
-	--n-color-disabled: rgba(28, 147, 191, .05) !important;
+	--n-color: rgba(var(--theme-success-color--rgb), .16) !important;
+	--n-color-hover: rgba(var(--theme-success-color--rgb), .22) !important;
+	--n-color-pressed: rgba(var(--theme-success-color--rgb), .28) !important;
+	--n-color-focus: rgba(var(--theme-success-color--rgb), .22) !important;
+	--n-color-disabled: rgba(var(--theme-success-color--rgb), .05) !important;
 	--n-text-color: var(--theme-success-color) !important;
 	--n-text-color-hover: var(--theme-success-color) !important;
 	--n-text-color-pressed: var(--theme-success-color) !important;
@@ -182,11 +192,11 @@ body:not(.skin-vector) .n-button--success-type:not(.n-button--color) {
 }
 
 body:not(.skin-vector) .n-button--info-type:not(.n-button--color) {
-	--n-color: rgba(114, 135, 253, .16) !important;
-	--n-color-hover: rgba(114, 135, 253, .22) !important;
-	--n-color-pressed: rgba(114, 135, 253, .28) !important;
-	--n-color-focus: rgba(114, 135, 253, .22) !important;
-	--n-color-disabled: rgba(114, 135, 253, .05) !important;
+	--n-color: rgba(var(--theme-info-color--rgb), .16) !important;
+	--n-color-hover: rgba(var(--theme-info-color--rgb), .22) !important;
+	--n-color-pressed: rgba(var(--theme-info-color--rgb), .28) !important;
+	--n-color-focus: rgba(var(--theme-info-color--rgb), .22) !important;
+	--n-color-disabled: rgba(var(--theme-info-color--rgb), .05) !important;
 	--n-text-color: var(--theme-info-color) !important;
 	--n-text-color-hover: var(--theme-info-color) !important;
 	--n-text-color-pressed: var(--theme-info-color) !important;
@@ -200,11 +210,11 @@ body:not(.skin-vector) .n-button--info-type:not(.n-button--color) {
 }
 
 body:not(.skin-vector) .n-button--error-type:not(.n-button--color) {
-	--n-color: rgba(230, 69, 83, .16) !important;
-	--n-color-hover: rgba(230, 69, 83, .22) !important;
-	--n-color-pressed: rgba(230, 69, 83, .28) !important;
-	--n-color-focus: rgba(230, 69, 83, .22) !important;
-	--n-color-disabled: rgba(230, 69, 83, .05) !important;
+	--n-color: rgba(var(--theme-danger-color--rgb), .16) !important;
+	--n-color-hover: rgba(var(--theme-danger-color--rgb), .22) !important;
+	--n-color-pressed: rgba(var(--theme-danger-color--rgb), .28) !important;
+	--n-color-focus: rgba(var(--theme-danger-color--rgb), .22) !important;
+	--n-color-disabled: rgba(var(--theme-danger-color--rgb), .05) !important;
 	--n-text-color: var(--theme-danger-color) !important;
 	--n-text-color-hover: var(--theme-danger-color) !important;
 	--n-text-color-pressed: var(--theme-danger-color) !important;
@@ -243,6 +253,10 @@ body:not(.skin-vector) .n-badge {
 
 body:not(.skin-vector) .mobile-edit-button a:visited {
 	color: var(--n-text-color-pressed);
+}
+
+body:not(.skin-vector) a.page-tool-link[style*="danger"]:hover {
+	box-shadow: 0 0 0 2px rgba(var(--theme-danger-color--rgb), .16);
 }
 
 body:not(.skin-vector) .noteTA-button > button {
@@ -362,12 +376,12 @@ body:not(.skin-vector) .n-text {
 }
 
 body:not(.skin-vector) .n-gradient-text--success-type {
-	--n-color-start: rgba(28, 147, 191, .6) !important;
+	--n-color-start: rgba(var(--theme-success-color--rgb), .6) !important;
 	--n-color-end: var(--theme-success-color) !important;
 }
 
 body:not(.skin-vector) .n-gradient-text--error-type {
-	--n-color-start: rgba(230, 69, 83, .6) !important;
+	--n-color-start: rgba(var(--theme-danger-color--rgb), .6) !important;
 	--n-color-end: var(--theme-danger-color) !important;
 }
 
@@ -386,10 +400,6 @@ body:not(.skin-vector) .n-a {
 }
 
 /* Other */
-body:not(.skin-vector) img[src="https://app.moegirl.org.cn/img/MoeSkin_feedback_icon_green.png"] {
-	filter: hue-rotate(79deg) brightness(.76);
-}
-
 body:not(.skin-vector) .sidenav-header-title img[src$="MoegirlPedia-Title-green.svg"] {
 	filter: hue-rotate(74deg);
 }
@@ -480,6 +490,14 @@ body:not(.skin-vector) .mod-status-icon.status-latest-approved {
 
 body:not(.skin-vector) div.mw-warning-with-logexcerpt {
 	border-color: var(--theme-link-color);
+}
+
+body:not(.skin-vector) .cls-1 {
+	fill: var(--theme-danger-color);
+}
+
+body:not(.skin-vector) .cls-2 {
+	fill: var(--theme-background-color);
 }
 
 body:not(.skin-vector) [text~="#18a058"] {
