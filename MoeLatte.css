@@ -8,7 +8,7 @@
 	--theme-accent-link-color: rgb(230, 233, 239) !important;
 	--theme-background-color: rgb(251, 252, 253) !important;
 	--theme-border-color: rgb(220, 224, 232) !important;
-	--theme-text-shadow-color: rgb(140, 143, 161) !important;
+	--theme-text-shadow-color--rgb: 140, 143, 161 !important;
 	--theme-button-color: rgb(32, 159, 181) !important;
 	--theme-button-color--hover: #25B6D0 !important;
 	--theme-button-color--active: #1C889B !important;
@@ -54,6 +54,7 @@
 	--theme-accent-color: rgb(var(--theme-accent-color--rgb)) !important;
 	--theme-secondary-color: rgb(var(--theme-secondary-color--rgb)) !important;
 	--theme-text-color: rgb(var(--theme-text-color--rgb)) !important;
+	--theme-text-shadow-color: rgb(var(--theme-text-shadow-color--rgb)) !important;
 	--theme-card-background-color: rgb(var(--theme-card-background-color--rgb)) !important;
 	--home-accent-color: rgb(var(--home-accent-color--rgb)) !important;
 	--home-secondary-color: rgb(var(--home-secondary-color--rgb)) !important;
@@ -397,6 +398,55 @@ body:not(.skin-vector) .n-h {
 body:not(.skin-vector) .n-a {
 	color: var(--theme-accent-color) !important;
 	text-decoration-color: var(--theme-accent-color) !important;
+}
+
+/* Alert */
+body:not(.skin-vector) .n-alert {
+	--n-color: rgb(236, 249, 252);
+	--n-icon-color: var(--theme-button-color);
+	--n-border: 1px solid rgb(186, 234, 243);
+	--n-title-text-color: var(--theme-item-text-color);
+	--n-content-text-color: var(--theme-text-color);
+}
+
+/* Checkbox */
+body:not(.skin-vector) .n-checkbox {
+	--n-border-checked: 1px solid var(--theme-accent-color);
+	--n-border-focus: 1px solid var(--theme-accent-color);
+	--n-box-shadow-focus: 0 0 0 2px rgba(var(--theme-accent-color--rgb), 0.3);
+	--n-color-checked: var(--theme-button-color);
+}
+
+/* Radio */
+body:not(.skin-vector) .n-radio-group {
+	--n-button-border-color-active: var(--theme-button-color);
+	--n-button-box-shadow-focus: inset 0 0 0 1px var(--theme-button-color), 0 0 0 2px rgba(var(--theme-accent-color--rgb), 0.3);
+	--n-button-text-color-hover: var(--theme-button-color);
+	--n-button-text-color-active: var(--theme-button-color);
+}
+
+body:not(.skin-vector) .n-radio {
+	--n-box-shadow-focus: inset 0 0 0 1px var(--theme-button-color), 0 0 0 2px rgba(var(--theme-accent-color--rgb), 0.2);
+	--n-box-shadow-hover: inset 0 0 0 1px var(--theme-button-color);
+}
+
+/* Tag */
+body:not(.skin-vector) div[class^="n-tag"][class*="-psc"] {
+    --n-border: 1px solid rgba(var(--theme-accent-color--rgb), 0.3);
+	--n-color: rgba(var(--theme-accent-color--rgb), 0.1);
+	--n-text-color: var(--theme-accent-color);
+}
+
+body:not(.skin-vector) div[class^="n-tag"][class*="-esc"] {
+    --n-border: 1px solid rgba(var(--theme-danger-color--rgb), 0.3);
+	--n-color: rgba(var(--theme-danger-color--rgb), 0.1);
+	--n-text-color: var(--theme-danger-color);
+}
+
+body:not(.skin-vector) div[class^="n-tag"][class*="-dsc"] {
+    --n-border: 1px solid rgba(var(--theme-text-shadow-color--rgb), 0.3);
+	--n-color: rgba(var(--theme-text-shadow-color--rgb), 0.1);
+	--n-text-color: var(--theme-text-shadow-color);
 }
 
 /* Other */
