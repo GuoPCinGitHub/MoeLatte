@@ -30,6 +30,7 @@
 	--theme-info-color: rgb(var(--theme-info-color--rgb)) !important;
 	--theme-warn-color: rgb(var(--theme-warn-color--rgb)) !important;
 	--theme-danger-color: rgb(var(--theme-danger-color--rgb)) !important;
+	--theme-danger-color--active: #CC3D49 !important;
 	--theme-empty-color: rgb(var(--theme-empty-color--rgb)) !important;
 	--theme-input-background-color: rgb(247, 248, 250) !important;
 	--theme-input-border-color: rgb(220, 224, 232) !important;
@@ -106,6 +107,7 @@
 	--theme-info-color: rgb(var(--theme-info-color--rgb)) !important;
 	--theme-warn-color: rgb(var(--theme-warn-color--rgb)) !important;
 	--theme-danger-color: rgb(var(--theme-danger-color--rgb)) !important;
+	--theme-danger-color--active: #FAB1AA !important;
 	--theme-empty-color: rgb(var(--theme-empty-color--rgb)) !important;
 	--theme-input-background-color: rgb(48, 57, 76) !important;
 	--theme-input-border-color: rgb(220, 224, 232) !important;
@@ -258,6 +260,10 @@ body:not(.skin-vector) .mobile-edit-button a:visited {
 
 body:not(.skin-vector) a.page-tool-link[style*="danger"]:hover {
 	box-shadow: 0 0 0 2px rgba(var(--theme-danger-color--rgb), .16);
+}
+
+body:not(.skin-vector) a.page-tool-link[style*="danger"]:active {
+	background-color: var(--theme-danger-color--active);
 }
 
 body:not(.skin-vector) .noteTA-button > button {
