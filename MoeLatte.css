@@ -1,4 +1,4 @@
-:root {
+:root > body:not(.skin-vector) {
 	--theme-accent-color--rgb: 26, 162, 170 !important;
 	--theme-secondary-color--rgb: 32, 159, 181 !important;
 	--theme-text-color--rgb: 76, 79, 105 !important;
@@ -75,7 +75,7 @@
 	--theme-code-color: rgb(244, 244, 247) !important;
 }
 
-:root[color-mode=dark] {
+:root[color-mode="dark"] > body:not(.skin-vector) {
 	--theme-accent-color--rgb: 153, 235, 239 !important;
 	--theme-secondary-color--rgb: 169, 229, 240 !important;
 	--theme-text-color--rgb: 227, 230, 237 !important;
