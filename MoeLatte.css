@@ -445,6 +445,7 @@ body:not(.skin-vector) div[class^="n-tag"][class*="-psc"] {
 
 body:not(.skin-vector) div[class^="n-tag"][class*="-psc"]:hover {
 	--n-color: var(--theme-accent-color) !important;
+	--n-text-color: var(--theme-accent-link-color) !important;
 }
 
 body:not(.skin-vector) div[class^="n-tag"][class*="-esc"] {
@@ -455,6 +456,7 @@ body:not(.skin-vector) div[class^="n-tag"][class*="-esc"] {
 
 body:not(.skin-vector) div[class^="n-tag"][class*="-esc"]:hover {
 	--n-color: var(--theme-danger-color) !important;
+	--n-text-color: var(--theme-accent-link-color) !important;
 }
 
 body:not(.skin-vector) div[class^="n-tag"][class*="-dsc"] {
