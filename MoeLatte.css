@@ -563,6 +563,18 @@ body:not(.skin-vector) div.mw-warning-with-logexcerpt {
 	border-color: var(--theme-link-color);
 }
 
+body:not(.skin-vector) .mw-collapsible-toggle-default .mw-collapsible-text {
+	color: var(--theme-link-color);
+}
+
+body:not(.skin-vector) .mw-collapsible-toggle-default .mw-collapsible-text:hover {
+	color: var(--theme-link-color--hover);
+}
+
+body:not(.skin-vector) .mw-collapsible-toggle-default .mw-collapsible-text:active {
+	color: var(--theme-link-color--visited);
+}
+
 body:not(.skin-vector) .cls-1 {
 	fill: var(--theme-danger-color);
 }
