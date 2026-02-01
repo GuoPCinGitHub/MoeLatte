@@ -75,7 +75,7 @@
 	--theme-code-color: rgb(244, 244, 247) !important;
 }
 
-:root[color-mode="dark"] > body:not(.skin-vector) {
+:root.dark > body:not(.skin-vector) {
 	--theme-accent-color--rgb: 153, 235, 239 !important;
 	--theme-secondary-color--rgb: 169, 229, 240 !important;
 	--theme-text-color--rgb: 227, 230, 237 !important;
@@ -573,6 +573,10 @@ body:not(.skin-vector) .mw-collapsible-toggle-default .mw-collapsible-text:hover
 
 body:not(.skin-vector) .mw-collapsible-toggle-default .mw-collapsible-text:active {
 	color: var(--theme-link-color--visited);
+}
+
+body:not(.skin-vector) .edit-button-group a:visited {
+	color: var(--theme-accent-link-color);
 }
 
 body:not(.skin-vector) .cls-1 {
