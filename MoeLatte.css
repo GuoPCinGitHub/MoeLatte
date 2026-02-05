@@ -413,9 +413,7 @@ body:not(.skin-vector) .n-empty {
 
 /* Alert */
 body:not(.skin-vector) .n-alert {
-	--n-color: rgb(236, 249, 252);
 	--n-icon-color: var(--theme-button-color);
-	--n-border: 1px solid rgb(186, 234, 243);
 	--n-title-text-color: var(--theme-item-text-color);
 	--n-content-text-color: var(--theme-text-color);
 }
