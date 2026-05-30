@@ -182,6 +182,7 @@ body:not(.skin-vector) .n-button--success-type:not(.n-button--color) {
 	--n-color-pressed: rgba(var(--theme-success-color--rgb), .28) !important;
 	--n-color-focus: rgba(var(--theme-success-color--rgb), .22) !important;
 	--n-color-disabled: rgba(var(--theme-success-color--rgb), .05) !important;
+	--n-ripple-color: var(--theme-success-color) !important;
 	--n-text-color: var(--theme-success-color) !important;
 	--n-text-color-hover: var(--theme-success-color) !important;
 	--n-text-color-pressed: var(--theme-success-color) !important;
@@ -200,6 +201,7 @@ body:not(.skin-vector) .n-button--info-type:not(.n-button--color) {
 	--n-color-pressed: rgba(var(--theme-info-color--rgb), .28) !important;
 	--n-color-focus: rgba(var(--theme-info-color--rgb), .22) !important;
 	--n-color-disabled: rgba(var(--theme-info-color--rgb), .05) !important;
+	--n-ripple-color: var(--theme-info-color) !important;
 	--n-text-color: var(--theme-info-color) !important;
 	--n-text-color-hover: var(--theme-info-color) !important;
 	--n-text-color-pressed: var(--theme-info-color) !important;
@@ -218,6 +220,7 @@ body:not(.skin-vector) .n-button--error-type:not(.n-button--color) {
 	--n-color-pressed: rgba(var(--theme-danger-color--rgb), .28) !important;
 	--n-color-focus: rgba(var(--theme-danger-color--rgb), .22) !important;
 	--n-color-disabled: rgba(var(--theme-danger-color--rgb), .05) !important;
+	--n-ripple-color: var(--theme-danger-color) !important;
 	--n-text-color: var(--theme-danger-color) !important;
 	--n-text-color-hover: var(--theme-danger-color) !important;
 	--n-text-color-pressed: var(--theme-danger-color) !important;
@@ -289,11 +292,33 @@ body:not(.skin-vector) .noteTAViewer-button:active::after {
 	box-shadow: 0 0 0 0 var(--theme-button-color);
 }
 
+/* Dialog */
+body:not(.skin-vector) .n-dialog {
+	--n-icon-color: var(--theme-danger-color);
+	--n-color: var(--theme-background-color);
+	--n-text-color: var(--theme-text-color);
+	--n-close-color-hover: rgba(var(--theme-text-shadow-color--rgb), .09);
+	--n-close-color-pressed: rgba(var(--theme-text-shadow-color--rgb), .13);
+	--n-close-icon-color: var(--theme-text-shadow-color);
+	--n-close-icon-color-hover: var(--theme-text-shadow-color);
+	--n-close-icon-color-pressed: var(--theme-text-shadow-color);
+	--n-border: 1px solid var(--theme-border-color);
+	--n-title-text-color: var(--theme-text-color);
+}
+
 /* Drawer */
 body:not(.skin-vector) .n-drawer-container {
-	--n-text-color: var(--theme-text-color) !important;
-	--n-title-text-color: var(--theme-text-color) !important;
-	--n-resize-trigger-color-hover: var(rgb(--theme-accent-color--rgb)) !important;
+	--n-text-color: var(--theme-text-color);
+	--n-title-text-color: var(--theme-text-color);
+	--n-color: var(--theme-background-color);
+	--n-header-border-bottom: 1px solid var(--theme-border-color);
+	--n-footer-border-top: 1px solid var(--theme-border-color);
+	--n-close-color-hover: rgba(var(--theme-text-shadow-color--rgb), .09);
+	--n-close-color-pressed: rgba(var(--theme-text-shadow-color--rgb), .13);
+	--n-close-icon-color: var(--theme-text-shadow-color);
+	--n-close-icon-color-hover: var(--theme-text-shadow-color);
+	--n-close-icon-color-pressed: var(--theme-text-shadow-color);
+	--n-resize-trigger-color-hover: var(--theme-accent-color--rgb);
 }
 
 /* Menu */
