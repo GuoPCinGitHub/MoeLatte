@@ -601,6 +601,11 @@ body:not(.skin-vector) .n-tag.flag-tag[title="小编辑"] {
 }
 
 /* Other */
+body:not(.skin-vector) .n-heatmap .n-heatmap-color-indicator__cell,
+body:not(.skin-vector) .n-heatmap .n-heatmap-rect {
+	filter: hue-rotate(58deg);
+}
+
 body:not(.skin-vector) .sidenav-header-title img[src$="MoegirlPedia-Title-green.svg"] {
 	filter: hue-rotate(74deg);
 }
@@ -617,11 +622,6 @@ body:not(.skin-vector).page-Mainpage .sitelogo img {
 
 body:not(.skin-vector).page-Mainpage .n-tag__icon {
 	filter: hue-rotate(67deg) brightness(.82);
-}
-
-body:not(.skin-vector) .n-heatmap .n-heatmap-color-indicator__cell,
-body:not(.skin-vector) .n-heatmap .n-heatmap-rect {
-	filter: hue-rotate(58deg);
 }
 
 body:not(.skin-vector).page-Mainpage .n-pagination-item {
