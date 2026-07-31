@@ -730,6 +730,11 @@ body:not(.skin-vector) [bg~="#dcf1e0"] {
 	background-color: rgb(230 233 239 / var(--un-text-opacity)) !important;
 }
 
+body:not(.skin-vector) .moe-comments-item__expand-button {
+	background: var(--theme-header-background-color) !important;
+	color: var(--theme-accent-color) !important;
+}
+
 body:not(.skin-vector) .popup_mainlink a {
 	color: var(--theme-text-color);
 }
