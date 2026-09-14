@@ -742,6 +742,26 @@ body:not(.skin-vector) .moe-comments-item__expand-button {
 	color: var(--theme-accent-color) !important;
 }
 
+body:not(.skin-vector) .moe-mobile-gate__divider {
+	background: var(--theme-secondary-color);
+}
+
+body:not(.skin-vector) .moe-mobile-gate__download {
+	color: var(--theme-text-shadow-color);
+}
+
+body:not(.skin-vector) .moe-mobile-gate__download a {
+	color: var(--theme-link-color);
+}
+
+body:not(.skin-vector) .moe-mobile-gate__fade {
+	background: linear-gradient(transparent, var(--theme-card-background-color));
+}
+
+body:not(.skin-vector) .moe-mobile-gate__panel {
+	background: var(--theme-card-background-color);
+}
+
 body:not(.skin-vector) .navpopup {
 	background: var(--theme-background-color);
 }
