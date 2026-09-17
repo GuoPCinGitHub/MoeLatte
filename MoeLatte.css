@@ -608,6 +608,11 @@ body:not(.skin-vector) .n-tag.flag-tag[title="小编辑"] {
 }
 
 /* Other */
+body:not(.skin-vector) .n-form .image-uploading::before {
+	border: 3px solid var(--theme-border-color);
+	border-top-color: var(--theme-accent-color);
+}
+
 body:not(.skin-vector) .n-heatmap .n-heatmap-color-indicator__cell,
 body:not(.skin-vector) .n-heatmap .n-heatmap-rect {
 	filter: hue-rotate(58deg);
