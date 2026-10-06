@@ -607,6 +607,85 @@ body:not(.skin-vector) .n-tag.flag-tag[title="小编辑"] {
 	--n-text-color: var(--theme-text-shadow-color) !important;
 }
 
+/* Achievements */
+body:not(.skin-vector) .moe-ach {
+	--ach-brand: var(--theme-accent-color);
+	--ach-brand-dark: #127177;
+	--ach-brand-light: #ddf8fa;
+	--ach-brand-faint: #eefcfc;
+	--ach-text: var(--home-text-color);
+	--ach-text-2: var(--home-text-secondary-color);
+	--ach-text-3: var(--home-text-tertiary-color);
+	--ach-text-4: var(--home-text-ghost-color);
+	--ach-border: var(--theme-border-color);
+	--ach-border-strong: var(--theme-empty-color);
+	--ach-divider: var(--theme-list-item-background-color);
+	--ach-surface: var(--theme-background-color);
+	--ach-surface-sunken: var(--theme-card-background-color);
+	--ach-track: var(--theme-list-item-background-color);
+	--ach-muted-bg: var(--theme-accent-link-color);
+	--ach-shadow-xs: 0 1px 2px rgba(var(--theme-text-shadow-color--rgb), 0.05);
+	--ach-shadow-md: 0 2px 6px rgba(var(--theme-text-shadow-color--rgb), 0.05), 0 8px 24px rgba(var(--theme-text-shadow-color--rgb), 0.09);
+	--ach-shadow-panel: 0 8px 32px rgba(var(--theme-text-color--rgb), 0.16);
+}
+
+body:not(.skin-vector) .moe-ach.is-dark {
+	--ach-brand-dark: #ddf8fa;
+	--ach-brand-light: #127177;
+	--ach-brand-faint: #0a4144;
+}
+
+body:not(.skin-vector) .moe-ach .tier-formal {
+	--halo: rgba(var(--theme-secondary-color--rgb), 0.2);
+	--tint: rgba(var(--theme-secondary-color--rgb), 0.55);
+}
+
+body:not(.skin-vector) .moe-ach .achievement-item.completed .achievement-status svg {
+	stroke: var(--theme-secondary-color);
+	filter: drop-shadow(0 0 3px rgba(var(--theme-secondary-color--rgb), 0.45))
+}
+
+body:not(.skin-vector) .moe-ach .achievement-item.locked .achievement-status svg {
+	stroke: var(--theme-text-shadow-color);
+}
+
+body:not(.skin-vector) .moe-ach .achievement-item.in-progress .achievement-status svg {
+	stroke: var(--theme-info-color);
+}
+
+body:not(.skin-vector) .moe-ach .ach-btn.save:hover:not(:disabled) {
+	background: var(--theme-button-color--hover);
+}
+
+body:not(.skin-vector) .moe-ach .tier-chip.tc-formal {
+	color: var(--theme-accent-color);
+	background: var(--ach-brand-light);
+}
+
+body:not(.skin-vector) .moe-ach .badge-icon-xl img {
+	filter: drop-shadow(0 4px 8px rgba(var(--theme-text-color--rgb), 0.18));
+}
+
+body:not(.skin-vector) .moe-ach .badge-showcase-card .bsc-pedestal {
+	background: radial-gradient(rgba(var(--theme-text-color--rgb), 0.15) 0%, transparent 70%);
+}
+
+body:not(.skin-vector) .moe-ach .badge-picker-item:hover {
+	border-color: rgba(var(--theme-secondary-color--rgb), 0.5);
+}
+
+body:not(.skin-vector) .moe-ach .badge-picker-item.selected::after {
+	box-shadow: 0 1px 3px rgba(var(--theme-secondary-color--rgb), 0.2);
+}
+
+body:not(.skin-vector) .moe-ach .bd-progress-bar span {
+	background: linear-gradient(90deg, var(--ach-brand-light), var(--ach-brand));
+}
+
+body:not(.skin-vector) .moe-ach .l3-nav.on {
+	border-color: rgba(var(--theme-secondary-color--rgb), 0.45);
+}
+
 /* Other */
 body:not(.skin-vector) .n-form .image-uploading::before {
 	border: 3px solid var(--theme-border-color);
