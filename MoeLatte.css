@@ -836,7 +836,7 @@ body:not(.skin-vector) .level-tag {
 }
 
 body:not(.skin-vector) .level-tag[style*="rgb(204, 204, 204)"] {
-	background-color: var(--theme-empty-color);
+	background-color: var(--theme-empty-color) !important;
 }
 
 body:not(.skin-vector) .level-tag[style*="rgb(37, 180, 73)"] {
