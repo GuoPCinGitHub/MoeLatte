@@ -466,25 +466,42 @@ body:not(.skin-vector) .n-breadcrumb {
 
 /* Card */
 body:not(.skin-vector) .n-card {
-	--n-text-color: var(--theme-text-color);
-	--n-title-text-color: var(--theme-text-color);
+	--n-color: var(--theme-background-color) !important;
+	--n-color-modal: var(--theme-background-color) !important;
+	--n-color-popover: var(--theme-background-color) !important;
+	--n-color-embedded: var(--theme-input-background-color) !important;
+	--n-color-embedded-modal: var(--theme-input-background-color) !important;
+	--n-color-embedded-popover: var(--theme-input-background-color) !important;
+	--n-color-target: var(--theme-accent-color) !important;
+	--n-text-color: var(--theme-text-color) !important;
+	--n-action-color: var(--theme-input-background-color) !important;
+	--n-title-text-color: var(--theme-item-text-color) !important;
+	--n-close-icon-color: var(--theme-text-shadow-color) !important;
+	--n-close-icon-color-hover: var(--theme-text-shadow-color) !important;
+	--n-close-icon-color-pressed: var(--theme-text-shadow-color) !important;
+	--n-border-color: var(--theme-border-color) !important;
+}
+
+body:not(.skin-vector) .n-card .dropzone:hover {
+	border-color: var(--theme-accent-color);
+	background-color: rgba(var(--theme-accent-color--rgb), 0.05);
 }
 
 /* Checkbox */
 body:not(.skin-vector) .n-checkbox {
-	--n-border-checked: 1px solid var(--theme-accent-color);
-	--n-border-focus: 1px solid var(--theme-accent-color);
-	--n-box-shadow-focus: 0 0 0 2px rgba(var(--theme-accent-color--rgb), 0.3);
-	--n-color-checked: var(--theme-button-color);
+	--n-border-checked: 1px solid var(--theme-accent-color) !important;
+	--n-border-focus: 1px solid var(--theme-accent-color) !important;
+	--n-box-shadow-focus: 0 0 0 2px rgba(var(--theme-accent-color--rgb), 0.3) !important;
+	--n-color-checked: var(--theme-button-color) !important;
 }
 
 /* Form */
 body:not(.skin-vector) .n-form-item {
-	--n-asterisk-color: var(--theme-danger-color);
-	--n-label-text-color: var(--theme-text-color);
-	--n-feedback-text-color: var(--theme-text-shadow-color);
-	--n-feedback-text-color-warning: var(--theme-warn-color);
-	--n-feedback-text-color-error: var(--theme-danger-color);
+	--n-asterisk-color: var(--theme-danger-color) !important;
+	--n-label-text-color: var(--theme-text-color) !important;
+	--n-feedback-text-color: var(--theme-text-shadow-color) !important;
+	--n-feedback-text-color-warning: var(--theme-warn-color) !important;
+	--n-feedback-text-color-error: var(--theme-danger-color) !important;
 }
 
 /* Popover */
